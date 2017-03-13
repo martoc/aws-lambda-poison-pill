@@ -1,0 +1,33 @@
+{
+    "name": "aws-lambda-poison-pill",
+    "description": "An Amazon EC2 Poison Pill for AWS Lambda",
+    "version": "1.0.0",
+    "homepage": "http://github.com/martoc/aws-lambda-poison-pill",
+    "bugs": {
+        "url": "http://github.com/martoc/aws-lambda-poison-pill/issues"
+    },
+    "dependencies": {
+        "aws-sdk":"2.4.9"
+    },
+    "keywords": [
+        "amazon",
+        "s3",
+        "lambda",
+        "cloudwatch"
+    ],
+    "author": {
+        "name": "Octavio Martin"
+    },
+    "lib": "./lib",
+    "main": "./index.js",
+    "license" : "SEE LICENSE IN LICENSE.txt",
+    "files": [
+        "index.js",
+        "LICENSE.txt",
+        "README.md"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/martoc/aws-lambda-poison-pill"
+    }
+}
