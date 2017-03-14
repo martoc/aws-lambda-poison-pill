@@ -9,7 +9,7 @@ function handleResult(err, data) {
   }
 }
 
-function terminate(instances) {
+function terminate(ec2, instances) {
   var params = {
     InstanceIds: instances
   };
@@ -20,7 +20,7 @@ function terminate(instances) {
 exports.handler = (event, context, callback) => {
   if (!region || region === null || region === "") {
     region = "us-east-1";
-    console.log("AWS Lambda using default region = " + region);
+    console.log("AWS Lambda S3 Lambda Monitoring using default region = " + region);
   }
   console.log("Input: ", event)
   var tagName = event.tag_name;
@@ -65,7 +65,7 @@ exports.handler = (event, context, callback) => {
             instances.push(instanceId);
           }
         }
-        terminate(instances);
+        terminate(ec2, instances);
     }
   });
   callback(null, "Done");
