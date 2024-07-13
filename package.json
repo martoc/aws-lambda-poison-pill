@@ -7,7 +7,7 @@
         "url": "http://github.com/martoc/aws-lambda-poison-pill/issues"
     },
     "dependencies": {
-        "aws-sdk":"2.1658.0"
+        "aws-sdk":"2.1659.0"
     },
     "keywords": [
         "amazon",
